@@ -5,6 +5,7 @@ gem 'sass'
 gem 'haml'
 gem 'haml-rails'
 gem 'compass'
+gem 'heroku'
 
 
 # Bundle edge Rails instead:

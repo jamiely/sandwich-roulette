@@ -1,5 +1,7 @@
 SandwichRoulette::Application.routes.draw do
   get "sandwich/random"
+  
+  root :to => "sandwich#random"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
