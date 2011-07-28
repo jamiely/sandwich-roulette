@@ -8,12 +8,19 @@ $red: #c83335;
 
 body {
     background-color: $red;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F03D40), to(#AB2C2D), color-stop(.6,#C83335));
     margin: 0;
     padding: 0;
 }
     .container {
         text-align: center;
         background-color: #ffefb1;
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF7D9), to(#E8D9A1), color-stop(.5,#FFEFB1));
+        
+        -moz-box-shadow: 5px 5px 5px #333;
+        -webkit-box-shadow: 5px 5px 5px #333;
+        box-shadow: 5px 5px 5px #333;
+        
         padding: 10px;
         margin: 10px;
         font-family: helvetica, arial, sans-serif;

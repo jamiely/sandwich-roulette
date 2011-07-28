@@ -1,14 +1,19 @@
 /* line 9, sass/global.scss */
 body {
   background-color: #c83335;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f03d40), to(#ab2c2d), color-stop(0.6, #c83335));
   margin: 0;
   padding: 0;
 }
 
-/* line 14, sass/global.scss */
+/* line 15, sass/global.scss */
 .container {
   text-align: center;
   background-color: #ffefb1;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff7d9), to(#e8d9a1), color-stop(0.5, #ffefb1));
+  -moz-box-shadow: 5px 5px 5px #333;
+  -webkit-box-shadow: 5px 5px 5px #333;
+  box-shadow: 5px 5px 5px #333;
   padding: 10px;
   margin: 10px;
   font-family: helvetica, arial, sans-serif;
@@ -16,16 +21,16 @@ body {
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
 }
-/* line 22, sass/global.scss */
+/* line 29, sass/global.scss */
 .container h1 > a {
   font-size: large;
   color: #c83335;
 }
-/* line 25, sass/global.scss */
+/* line 32, sass/global.scss */
 .container h1 > a .name {
   font-size: xx-large;
 }
-/* line 29, sass/global.scss */
+/* line 36, sass/global.scss */
 .container .choose > a {
   color: #c83335;
   font-size: xx-large;
@@ -33,34 +38,34 @@ body {
   margin-top: 30px;
 }
 
-/* line 36, sass/global.scss */
+/* line 43, sass/global.scss */
 .sandwich {
   font-weight: bold;
   margin: 0px;
   padding: 0px;
 }
-/* line 43, sass/global.scss */
+/* line 50, sass/global.scss */
 .sandwich .sandwich_part {
   display: block;
   margin: 5px;
   padding: 5px;
   text-transform: capitalize;
 }
-/* line 52, sass/global.scss */
+/* line 59, sass/global.scss */
 .sandwich .sandwich_part > div {
   display: inline-block;
   height: 75px;
   line-height: 75px;
   vertical-align: middle;
 }
-/* line 59, sass/global.scss */
+/* line 66, sass/global.scss */
 .sandwich .sandwich_part .item_type {
   width: 100px;
   color: #c83335;
   font-variant: small-caps;
   font-size: large;
 }
-/* line 66, sass/global.scss */
+/* line 73, sass/global.scss */
 .sandwich .sandwich_part .item {
   width: 150px;
   background-color: #ffc32f;
