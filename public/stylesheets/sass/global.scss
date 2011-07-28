@@ -6,6 +6,21 @@ $red: #c83335;
   -webkit-border-radius: $radius;
 }
 
+@mixin oval($width: 100px, $height: 50px) {
+    // shape (oval)
+    -moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+
+	-moz-box-shadow: 5px 5px 5px #333;
+    -webkit-box-shadow: 5px 5px 5px #333;
+    box-shadow: 5px 5px 5px #333;
+    
+    width: 150px;
+    height: 75px;
+    line-height: 75px;
+}
+
 body {
     background-color: $red;
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F03D40), to(#AB2C2D), color-stop(.6,#C83335));
@@ -29,15 +44,25 @@ body {
         h1 > a {
             font-size: large;
             color: $red;
+            text-shadow: 0.1em 0.1em 0.1em #000;
+            text-decoration: none;
+            
             .name {
                 font-size: xx-large;
             }
         }
         .choose > a {
             color: $red;
-            font-size: xx-large;
             font-weight: bold;
             margin-top: 30px;
+            
+            @include oval;
+            
+            // color
+            background-color: red;
+            
+            display: inline-block;
+            color: white;
         }
     }
     .sandwich {
@@ -69,10 +94,10 @@ body {
                 color: $red;
                 font-variant:small-caps;
                 font-size: large;
+                
+                text-shadow: 0.1em 0.1em 0.05em #333;
             }
             .item {
-                width: 150px;
-                
                 // color
                 background-color: #ffc32f;
                 background-image: -webkit-radial-gradient(50% 50%, ellipse contain, #ffc32f 0%,#ffefb1 300%);
@@ -82,14 +107,7 @@ body {
                 
                 font-size: small;
                 
-                // shape (oval)
-                -moz-border-radius: 100px / 50px;
-            	-webkit-border-radius: 100px / 50px;
-            	border-radius: 100px / 50px;
-        	
-            	-moz-box-shadow: 5px 5px 5px #333;
-                -webkit-box-shadow: 5px 5px 5px #333;
-                box-shadow: 5px 5px 5px #333;
+                @include oval
             }
         }
     }
