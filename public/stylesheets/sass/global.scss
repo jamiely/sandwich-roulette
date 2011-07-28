@@ -1,3 +1,5 @@
+$red: #c83335;
+
 @mixin rounded($radius: 10px) {
   border-radius: $radius;
   -moz-border-radius: $radius;
@@ -5,12 +7,20 @@
 }
 
 body {
-    background-color: #c02427;
+    background-color: $red;
 }
     .container {
+        text-align: center;
         background-color: #ffefb1;
         padding: 10px;
         @include rounded();
+        h1 > a {
+            font-size: large;
+            color: $red;
+            .name {
+                font-size: xx-large;
+            }
+        }
     }
     .sandwich {
         // font
@@ -31,23 +41,29 @@ body {
             
             > div {
                 display: inline-block;
-                width: 150px;
+                
                 height: 75px; 
                 line-height: 75px;     
                 vertical-align: middle;          
             }
             .item_type {
-                font-size: x-large;
-                color: #c83335;
+                width: 100px;
+                
+                color: $red;
                 font-variant:small-caps;
+                font-size: large;
             }
             .item {
+                width: 150px;
+                
                 // color
                 background-color: #ffc32f;
+                background-image: -webkit-radial-gradient(50% 50%, ellipse contain, #ffc32f 0%,#ffefb1 300%);
                 
                 // alignment
                 text-align: center;
                 
+                font-size: small;
                 
                 // shape (oval)
                 -moz-border-radius: 100px / 50px;
