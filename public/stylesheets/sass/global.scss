@@ -8,12 +8,13 @@ $red: #c83335;
 
 body {
     background-color: $red;
+    width: 320px;
 }
     .container {
         text-align: center;
         background-color: #ffefb1;
         padding: 10px;
-        margin: 15px;
+
         @include rounded(30px);
         h1 > a {
             font-size: large;
