@@ -16,6 +16,7 @@ body {
         background-color: #ffefb1;
         padding: 10px;
         margin: 10px;
+        font-family: helvetica, arial, sans-serif;
 
         @include rounded(30px);
         h1 > a {
@@ -25,11 +26,16 @@ body {
                 font-size: xx-large;
             }
         }
+        .choose > a {
+            color: $red;
+            font-size: xx-large;
+            font-weight: bold;
+            margin-top: 30px;
+        }
     }
     .sandwich {
         // font
         font-weight: bold;
-        font-family: helvetica, arial, sans-serif;
         
         // spacing
         margin: 0px;
