@@ -1,0 +1,7 @@
+%h1 Wawa Sandwich Roulette!
+
+%ul.sandwich
+    - %w{ sandwich toasted bread cheese spread condiments spices bacon }.each do |item_type|
+        %li.sandwich_part
+            .item_type= item_type
+            .item= @sandwich[item_type.to_sym]

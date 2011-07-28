@@ -1,0 +1,62 @@
+@mixin rounded($radius: 10px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+body {
+    background-color: #c02427;
+}
+    .container {
+        background-color: #ffefb1;
+        padding: 10px;
+        @include rounded();
+    }
+    .sandwich {
+        // font
+        font-weight: bold;
+        font-family: helvetica, arial, sans-serif;
+        
+        // spacing
+        margin: 0px;
+        padding: 0px;
+        .sandwich_part {
+            // removes list style
+            display: block;
+            margin: 5px;
+            padding: 5px;
+            
+            // font styles
+            text-transform: capitalize;
+            
+            > div {
+                display: inline-block;
+                width: 150px;
+                height: 75px; 
+                line-height: 75px;     
+                vertical-align: middle;          
+            }
+            .item_type {
+                font-size: x-large;
+                color: #c83335;
+                font-variant:small-caps;
+            }
+            .item {
+                // color
+                background-color: #ffc32f;
+                
+                // alignment
+                text-align: center;
+                
+                
+                // shape (oval)
+                -moz-border-radius: 100px / 50px;
+            	-webkit-border-radius: 100px / 50px;
+            	border-radius: 100px / 50px;
+        	
+            	-moz-box-shadow: 5px 5px 5px #333;
+                -webkit-box-shadow: 5px 5px 5px #333;
+                box-shadow: 5px 5px 5px #333;
+            }
+        }
+    }

@@ -1,0 +1,53 @@
+/* line 7, sass/global.scss */
+body {
+  background-color: #c02427;
+}
+
+/* line 10, sass/global.scss */
+.container {
+  background-color: #ffefb1;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+/* line 15, sass/global.scss */
+.sandwich {
+  font-weight: bold;
+  font-family: helvetica, arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 23, sass/global.scss */
+.sandwich .sandwich_part {
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  text-transform: capitalize;
+}
+/* line 32, sass/global.scss */
+.sandwich .sandwich_part > div {
+  display: inline-block;
+  width: 150px;
+  height: 75px;
+  line-height: 75px;
+  vertical-align: middle;
+}
+/* line 39, sass/global.scss */
+.sandwich .sandwich_part .item_type {
+  font-size: x-large;
+  color: #c83335;
+  font-variant: small-caps;
+}
+/* line 44, sass/global.scss */
+.sandwich .sandwich_part .item {
+  background-color: #ffc32f;
+  text-align: center;
+  -moz-border-radius: 100px/50px;
+  -webkit-border-radius: 100px/50px;
+  border-radius: 100px/50px;
+  -moz-box-shadow: 5px 5px 5px #333;
+  -webkit-box-shadow: 5px 5px 5px #333;
+  box-shadow: 5px 5px 5px #333;
+}
