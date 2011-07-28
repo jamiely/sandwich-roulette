@@ -13,7 +13,8 @@ body {
         text-align: center;
         background-color: #ffefb1;
         padding: 10px;
-        @include rounded();
+        margin: 15px;
+        @include rounded(30px);
         h1 > a {
             font-size: large;
             color: $red;

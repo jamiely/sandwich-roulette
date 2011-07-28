@@ -8,49 +8,50 @@ body {
   text-align: center;
   background-color: #ffefb1;
   padding: 10px;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
+  margin: 15px;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
 }
-/* line 17, sass/global.scss */
+/* line 18, sass/global.scss */
 .container h1 > a {
   font-size: large;
   color: #c83335;
 }
-/* line 20, sass/global.scss */
+/* line 21, sass/global.scss */
 .container h1 > a .name {
   font-size: xx-large;
 }
 
-/* line 25, sass/global.scss */
+/* line 26, sass/global.scss */
 .sandwich {
   font-weight: bold;
   font-family: helvetica, arial, sans-serif;
   margin: 0px;
   padding: 0px;
 }
-/* line 33, sass/global.scss */
+/* line 34, sass/global.scss */
 .sandwich .sandwich_part {
   display: block;
   margin: 5px;
   padding: 5px;
   text-transform: capitalize;
 }
-/* line 42, sass/global.scss */
+/* line 43, sass/global.scss */
 .sandwich .sandwich_part > div {
   display: inline-block;
   height: 75px;
   line-height: 75px;
   vertical-align: middle;
 }
-/* line 49, sass/global.scss */
+/* line 50, sass/global.scss */
 .sandwich .sandwich_part .item_type {
   width: 100px;
   color: #c83335;
   font-variant: small-caps;
   font-size: large;
 }
-/* line 56, sass/global.scss */
+/* line 57, sass/global.scss */
 .sandwich .sandwich_part .item {
   width: 150px;
   background-color: #ffc32f;
