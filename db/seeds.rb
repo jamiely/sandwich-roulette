@@ -81,6 +81,7 @@ spices = Item.create([
 ])
 
 bacon = Item.create([
-  {:item_type=>'bacon', :name=>'bacon'}
+  {:item_type=>'bacon', :name=>'bacon'},
+  {:item_type=>'bacon', :name=>'no bacon'}
 ])
 
