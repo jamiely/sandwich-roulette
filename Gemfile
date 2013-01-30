@@ -1,11 +1,14 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.3'
+gem 'rails', '3.0.20'
 gem 'sass'
 gem 'haml'
 gem 'haml-rails'
 gem 'compass'
-gem 'heroku'
+
+group :development do
+  gem 'heroku'
+end
 
 
 # Bundle edge Rails instead:
