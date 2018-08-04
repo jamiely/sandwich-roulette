@@ -1,10 +1,13 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem 'rails', '3.0.20'
+gem 'rails', '3.2.22.5'
 gem 'sass'
 gem 'haml'
 gem 'haml-rails'
 gem 'compass'
+gem 'rake', '10.5.0'
+gem 'rack-cache', '1.6.1'
+gem 'mail', '2.5.5'
 
 group :development do
   gem 'heroku'

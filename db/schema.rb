@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(:version => 20110728011521) do
   create_table "items", :force => true do |t|
     t.string   "name"
     t.string   "item_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
